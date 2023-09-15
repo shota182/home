@@ -15,7 +15,7 @@ project_root = Path(__file__).absolute().parent
 def run_subprocess(command):
     status, output = subprocess.getstatusoutput(command)
     if status != 0:
-        raise RuntimeError(f'Failed to run: {command}\n{output}')
+        raise RuntimeError(f"Failed to run: {command}\n{output}")
 
 
 os_name = platform.system()
