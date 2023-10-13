@@ -27,5 +27,5 @@ try:
     while True: pi.ChangeDutyCycle( duty )
 except KeyboardInterrupt: pass
 
-p0.stop()
+pi.stop()
 GPIO.cleanup()
