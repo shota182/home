@@ -5,7 +5,7 @@ import time
 import sys
 
 args = sys.argv
-duty = args[1]
+duty = int(args[1])
 if(duty < 0 or duty > 100): sys.exit()
 
 # LEDとスイッチのGPIO番号
