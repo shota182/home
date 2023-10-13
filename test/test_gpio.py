@@ -20,7 +20,7 @@ GPIO.setmode(GPIO.BCM)
 # LEDピンを出力に設定
 GPIO.setup(gpio_pwm, GPIO.OUT)
 
-pi = GPIO.PWM (gpio_pwm, 50 )  #( pin, Hz )
+pi = GPIO.PWM (gpio_pwm, 1000 )  #( pin, Hz )
 pi.start ( 0 )
 
 try:
